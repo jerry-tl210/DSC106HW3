@@ -1,0 +1,209 @@
+h1, h3 {
+    font-family: "Paytone one", sans-serif !important;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    width: 40%;
+    height: 60px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+span {
+    color: green;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+#grid-text-1 {
+    font-size: 20px;
+}
+
+#grid-text-2 {
+    font-size: 20px;
+}
+
+#grid-text-3 {
+    font-size: 20px;
+}
+
+#grid-number-1 {
+    font-size: 25px;
+    color: blue;
+}
+
+#grid-number-2 {
+    font-size: 25px;
+    color: blue;
+}
+
+#grid-number-3 {
+    font-size: 25px;
+    color: blue;
+}
+
+#grid-img-1 {
+    width: 50%;
+    height: 50%;
+}
+
+.flex-container {
+    display: flex;
+}
+  
+.flex-container-2 {
+    display: flex;
+}
+
+.flex-container > div {
+    width: 100px;
+    text-align: center;
+}
+
+#chart-1 {
+    flex-grow: 1;
+    height: 500px;
+}
+
+#chart-2 {
+    flex-grow: 1;
+    height: 500px;
+}
+
+figcaption {
+    font-size: 15px;
+}
+
+.pie {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    position: relative; top: 70px;
+}
+
+#firstcol {
+    background-color: lightgray;
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+th {
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+.no-spacing-text {
+    margin: 0;
+    padding: 0;
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+#container-1 {
+    flex-grow: 1;
+}
+
+#container-2 {
+    flex-grow: 1;
+}
+
+#d3-chart-1 {
+    flex-grow: 1;
+}
+
+#d3-chart-2 {
+    flex-grow: 1;
+}
+
+#legend-2 {
+    border: solid !important;
+}
+
+#chart-legend-2 {
+    border: solid !important;
+    width: 25%;
+    margin: auto;
+}
+
+#chart-legend-3 {
+    border: solid !important;
+    width: 25%;
+    margin: auto;
+}
+
+.legend {
+    list-style: none;
+}
+
+.dingus-legend {
+    float: left;
+    background-color: lightskyblue;
+    border: 1px solid #ccc; width: 12px; height: 12px; margin: 2px;
+}
+
+.widget-legend {
+    float: left;
+    background-color: limegreen;
+    border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px;
+}
+  
+/**
+.bar {
+    width: 100%;
+    height: 100%;
+}
+*/

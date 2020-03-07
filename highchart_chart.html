@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report for the Dingus & Widget Company</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="dsc106hw3.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+</head> 
+<body>
+
+    <header class='company logo'>   
+        <h1><img src="resources/dw-logo.png" class="logo" alt="Global Dashboard">Global Dashboard</h1>  
+    </header>
+
+    <main>
+        <section>
+            <div class="grid-container">
+                <div class="grid-item" id="grid-text-1"><h3>Dingus</h3></div>
+                <div class="grid-item" id="grid-text-2"><h3>Widget</h3></div>
+                <div class="grid-item" id="grid-text-3"><h3>Sales</h3></div>   
+                
+                <div class="grid-item" id="grid-number-1">0</div>
+                <div class="grid-item" id="grid-number-2">0</div>
+                <div class="grid-item" id="grid-number-3"><span>$</span>0.00</div>   
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="flex-container">
+            <div id="container-1"></div> 
+            <div id="container-2"></div>
+        </div>
+        
+        <div><hr></div>
+
+        <table id="myTable">
+            <caption>Order History</caption>
+            <colgroup>
+                <col id="firstcol">
+                <col>
+                <col span="2">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2">ID#</th>
+                    <th rowspan="2">Date</th>
+                    <th colspan="2">Quantity</th>
+                    <th rowspan="2">Total</th>
+                </tr>
+                <tr>
+                    <th>Dingus</th>
+                    <th>Widget</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">@ 2020 D&W Worldwide.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <script src="Resources/hw3_highchart.js">
+        </script>
+        <section>
+            
+            <details>
+                <summary><b>Order Form</b></summary>
+                <hr>
+                <form class="pure-form">
+                    <fieldset>                   
+                        <label>Dingus</label><input value="0" type="number" id="dingusField" onKeyUp="dingusTotalPrice(this.value)">
+                        <label>@</label><input value="14.25" size="25" disabled>
+                        <label>= $</label><input value="0.00" size="25" id="dingusTotalField" disabled>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Widget</label><input value="0" type="number" id="widgetField" onKeyUp="widgetTotalPrice(this.value)">
+                        <label>@</label><input value="9.99" size="25" disabled>
+                        <label>= $</label><input value="0.00" size="25" id="widgetTotalField" disabled>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Total $</label><input value="0.00" size="25" id="totalField" disabled>
+                    </fieldset>
+     
+                    <fieldset>
+                        <button type="button" class="button-error pure-button" onclick="clearForm(); return false;">Cancel</button>
+                        <button type="button" class="button-success pure-button" onclick="appendRow(); return false;" disabled>Order</button>
+                    </fieldset>
+
+                </form>
+            </details>
+            
+        </section>
+
+    </main>
+</body>
+</html>
+
